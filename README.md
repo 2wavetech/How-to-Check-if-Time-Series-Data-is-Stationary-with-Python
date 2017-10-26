@@ -1,5 +1,4 @@
-# How-to-Check-if-Time-Series-Data-is-Stationary-with-Python
-How to Check if Time Series Data is Stationary with Python
+# How to Check if Time Series Data is Stationary with Python
 
 Time series is different from more traditional classification and regression predictive modeling problems.
 The temporal structure adds an order to the observations. This imposed order means that important assumptions about the consistency of those observations needs to be handled specifically.
