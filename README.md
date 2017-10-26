@@ -307,7 +307,7 @@ print('variance1=%.2f, variance2=%.2f' % (var1, var2))
 
 Running this example shows that the mean and variance values are different, but in the same ball-park
 
-Next, let鈥檚 try the same trick on the Airline Passengers and Shampoo Sales dataset.
+Next, let's try the same trick on the Airline Passengers and Shampoo Sales dataset.
 
 #### Airline Passengers and Shampoo Sales Dataset
 
@@ -346,7 +346,7 @@ So we have a non-stationary time series.
 
 Well, maybe.
 
-Let鈥檚 take one step back and check if assuming a Gaussian distribution makes sense in this case by plotting the values of the time series as a histogram.
+Let's take one step back and check if assuming a Gaussian distribution makes sense in this case by plotting the values of the time series as a histogram.
 
 
 ```
@@ -518,7 +518,7 @@ Running the example gives a different picture than the above. The test statistic
 Comparing the test statistic to the critical values, it looks like we would have to accept the null hypothesis that the time series is non-stationary and does have time-dependent structure.
 
 
-Let鈥檚 **log transform** the dataset again to make the distribution of values more linear and better meet the expectations of this statistical test.
+Let's **log transform** the dataset again to make the distribution of values more linear and better meet the expectations of this statistical test.
 
 Jiyang's notes: if the trend of a time series is exponential, transforming it to log values may eliminate the trend.
 
@@ -565,7 +565,8 @@ We can see that the ADF value of Airline passgengers is still larger than the cr
 It seems that log transformation over shampoo sales does not remove the trend because both ADF Statistics > 0 and P-value > 0.05.
 A p-value more than the critical value means we cannot reject H0, we accept that there is a unit root and that the data is non-stationary.
 
-But鈥?
+But...
+
 We turn to machine learning methods when the classical methods fail. When we want more or better results. We cannot know how to best model unknown nonlinear relationships in time series data and some methods may result in better performance when working with non-stationary observations or some mixture of stationary and non-stationary views of the problem.
 
 The suggestion here is to treat properties of a time series being stationary or not as another source of information that can be used in feature engineering and feature selection on your time series problem when using machine learning methods.
